@@ -36,7 +36,8 @@ function showContent() {
     tablet[currentSlide].classList.add('active');
 }
 
-next.addEventListener('click', () => {
+next.addEventListener('click', (e) => {
+    e.preventDefault();
     if(currentSlide == slides.length - 1) {
         currentSlide = 0;
     } else {
@@ -44,7 +45,8 @@ next.addEventListener('click', () => {
     }
     showContent();
 });
-prev.addEventListener('click', () => {
+prev.addEventListener('click', (e) => {
+    e.preventDefault();
     if(currentSlide == 0) {
         currentSlide = slides.length - 1;
     } else {

@@ -18,6 +18,10 @@ link.forEach(item => {
 });
 
 new WOW().init();
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+	speedAsDuration: true
+});
 
 const slides = document.querySelectorAll('.tablet__slider-content'),
     next = document.querySelector('.tablet__slider-next'),
@@ -36,7 +40,8 @@ function showContent() {
     tablet[currentSlide].classList.add('active');
 }
 
-next.addEventListener('click', () => {
+next.addEventListener('click', (e) => {
+    e.preventDefault();
     if(currentSlide == slides.length - 1) {
         currentSlide = 0;
     } else {
@@ -44,7 +49,8 @@ next.addEventListener('click', () => {
     }
     showContent();
 });
-prev.addEventListener('click', () => {
+prev.addEventListener('click', (e) => {
+    e.preventDefault();
     if(currentSlide == 0) {
         currentSlide = slides.length - 1;
     } else {

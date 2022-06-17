@@ -27,6 +27,18 @@
             padding: 0 40px;
         }
     }
+    .tablet {
+        &__title{
+            width: 76%;
+        }
+    }
+    .advantage{
+        &__item{
+            width: 456px;
+            height: 284px;
+        }
+        
+    }
 }
 
 @media (max-width: 992px)
@@ -69,6 +81,36 @@
         }
         &__title{
             font-size: 33px;
+        }
+    }
+    .tablet{
+        &__tab{
+            width: 701px;
+            &-items{
+                font-size: 13px;
+            }
+        }
+        &__slider{
+            &-wrapper {
+                width: 100%;
+            }
+            &-wrap {
+                width: 74%;
+                height: 78%;
+                top: calc(50% - 19px);
+            }
+        }
+    }
+    .advantage {
+        &__item {
+            width: 355px;
+            height: 220px;
+        }
+        &__content{
+            margin: 11% 0;
+            height: 50%;
+            padding-top: 20px;
+            font-size: 20px;
         }
     }
 }
@@ -175,6 +217,33 @@
             font-size: 28px;
         }
     }
+    .tablet{
+        &__tab{
+            display: none;
+        }
+        &__slider{
+            &-wrap{
+                height: 79%;
+                top: calc(50% - 13px);
+            }
+        }
+    }
+    .advantage{
+        padding: 51px 0 50px;
+        &__title{
+            font-size: 25px;
+        }
+        &__wrapper {
+            justify-content: center;
+        }
+        &__item{
+            width: 455px;
+            height: 300px;
+        }
+        &__content{
+            padding-top: 44px;
+        }
+    }
 }
 
 @media (max-width: 576px)
@@ -217,6 +286,33 @@
                 width: 185px;
                 font-size: 14px;
             }
+        }
+    }
+    .tablet{
+        padding-top: 50px;
+        padding-bottom: 45px;
+        &__title{
+            font-size: 20px;
+        }
+        &__slider{
+            &-wrap{
+                height: 79%;
+                top: calc(50% - 8px);
+            }
+            &-prev img, &-next img{
+                width: 80%;
+            }
+        }
+    }
+    .advantage{
+        &__item {
+            width: 90%;
+        }
+        &__content{
+            padding: 30px 15px;
+            font-size: 16px;
+            height: 40%;
+            margin-top: 70px;
         }
     }
 }

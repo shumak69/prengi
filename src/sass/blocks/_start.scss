@@ -1,0 +1,30 @@
+.start{
+    padding: 80px 0;
+    &__img{
+        display: block;
+        margin: 0 auto;
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 900;
+        color: #393939;
+        text-align: center;
+        margin: 74px auto 0;
+    }
+    &__contact{
+        display: block;
+        width: 241px;
+        height: 60px;
+        background-color: #00c2f0;
+        box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.07);
+        margin: 30px auto 0;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,67 @@
+.data{
+    position: relative;
+    &__wrapper{
+        display: flex;
+        
+    }
+    &__item{
+        padding-top: 270px;
+        width: 960px;
+        height: 580px;
+        // opacity: 0.4;
+        background-color: rgba(255,255,255, 0.4);
+        &:first-of-type {
+            background: url('../img/icons/cloud.png') no-repeat 50% / cover;
+            padding-left: 100px;
+            padding-right: 90px;
+            text-align: right;
+        }
+        &:nth-child(2) {
+            background: url('../img/icons/server.png') no-repeat 50% / cover;
+            padding-left: 83px;
+            padding-right: 100px;
+            .data__container::after{
+                left: -40px;
+            }
+        }
+    }
+    &__text{
+        position: absolute;
+        top: 79px;
+        font-size: 30px;
+        line-height: 35px;
+        font-weight: 900;
+        color: #ffffff;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 400px;
+        text-align: center;
+    }
+    &__title{
+        font-size: 30px;
+        line-height: 22px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__content{
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color: #ffffff;
+        margin-top: 20px;
+    }
+    &__container{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 167px;
+            height: 167px;
+            opacity: 0.3;
+            background-color: #00c2f0;
+            top: -40px;
+            right: -40px;
+        }
+    }
+}

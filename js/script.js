@@ -18,6 +18,10 @@ link.forEach(item => {
 });
 
 new WOW().init();
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+	speedAsDuration: true
+});
 
 const slides = document.querySelectorAll('.tablet__slider-content'),
     next = document.querySelector('.tablet__slider-next'),
@@ -66,5 +70,15 @@ document.querySelector('.tablet__tab').addEventListener('click', (e) => {
         });
     }
 });
+
+width = window.screen.width
+if(width <= 768) {
+    const descr = document.querySelector('.footer__descr');
+    
+    console.log();
+    if(descr.textContent.length > 250) {
+        descr.textContent = descr.textContent.substring(0, 250) + '...';
+    }
+}
 
 
